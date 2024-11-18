@@ -18,6 +18,9 @@ body {
 
 .container {
   padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container .grid {
   display: grid;
@@ -30,7 +33,7 @@ body {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 0.825rem;
   height: fit-content;
-  gap: 1rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -38,7 +41,9 @@ body {
   font-weight: 600;
 }
 .container .grid .card p {
-  font-weight: 100;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100%;
 }
 .container .grid .card .name {
   font-weight: 500;
@@ -95,6 +100,7 @@ body {
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(2, auto);
     gap: 2rem;
+    width: 65%;
   }
   .container .grid #card-1 {
     grid-column: 1/3;
